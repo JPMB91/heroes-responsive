@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.descuentos {
+  height: 38px;
+  background-color: #d1891c;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+  color: #333333;
+}
+.texto-descuentos {
+  font-size: 1rem;
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00669f;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 192%;
+  left: 90%;
+}
+
+.plus p {
+  color: #ffff;
+  font-size: 2rem;
+}
+
+.header-contenido {
+  height: 101px;
+  background-color: #00669f;
+  box-shadow: 10px 5px 10px black;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-texto {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: space-evenly;
+}
+
+.card-container {
+  height: 764.15px;
+  width: 400px;
+  margin: 2rem 1rem;
+  position: relative;
+}
+
+.card-top {
+  height: 300px;
+}
+
+.card-main-image {
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+  border-top-left-radius: 1.7rem;
+  border-top-right-radius: 1.7rem;
+}
+
+.card-profile-image {
+  width: 15vw;
+  position: absolute;
+  right: 135px;
+  right: 50%;
+  top: 35%;
+  transform: translate(50%, -50%);
+}
+
+.card-profile-image {
+  width: 15vw;
+  position: absolute;
+}
+
+.cards-content {
+  height: 420px;
+  background-color: #f3f3f3;
+  padding: 7%;
+  text-align: center;
+  align-items: center;
+}
+
+.hero-names {
+  margin-top: 2.8rem;
+  font-size: 2rem;
+}
+.cards-text {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.cards-button {
+  background-color: #00669f;
+  padding: 0.8rem 2.5rem;
+  color: white;
+  position: absolute;
+  bottom: 4rem;
+  transform: translateX(-50%);
+}
+
+.heart {
+  font-size: 2rem;
+  color: red;
+  position: absolute;
+  left: 1.2rem;
+  top: 1.2rem;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  margin-top: 7%;
+  height: 51px;
+  font-size: 17px;
+  background-color: #00669f;
+  padding: 0 20px;
+}
+
+.footer-text {
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.github {
+  width: 70px;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .card-container {
+    margin-top: 40px;
+  }
+
+  .hero-names {
+    font-size: 1.5rem;
+  }
+  .cards-text {
+    text-align: left;
+  }
+
+  .cards-text {
+    -webkit-line-clamp: 3;
+  }
+
+  .card-profile-image {
+    width: 25vw;
+  }
+
+  .plus {
+    top: 350%;
+    right: 10%;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+}
